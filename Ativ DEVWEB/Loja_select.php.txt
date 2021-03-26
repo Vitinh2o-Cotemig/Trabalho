@@ -1,0 +1,25 @@
+<?php 
+header("Content-type:text/html; charset:utf8");
+$total = "300";
+echo ("LG G8S THINQ                R$: "$total")
+echo ("O LG G8s ThinQ é um dos smartphones Android mais avançados e completos que existem em circulação. Tem um grande display de 6.21 polegadas com uma resolução de 2248x1080 pixel. As funcionalidades oferecidas pelo LG G8s ThinQ são muitas e inovadoras. Começando pelo LTE 4G que permite a transferência de dados e excelente navegação na internet. Enfatizamos a excelente memória interna de 128 GB com a possibilidade de expansão.
+Câmera discreta de 12 megapixel mas que permite ao LG G8s ThinQ tirar fotos de boa qualidade com uma resolução de 4000x3000 pixel e gravar vídeos em 4K a espantosa resolução de 3840x2160 pixels. A espessura de 8mm torna o LG G8s ThinQ um dos telefones mais completos e finos.)"
+if ($Parcelas == 2) {$total = 3020}
+else if ($Parcelas == 3) {$total = 3060}
+else if ($Parcelas == 4) {$total = 3120}
+else if ($Parcelas == 5) {$total = 3200}
+else if($Parcelas == 6) {$total = 3300}
+else {$total = 3000}
+?>
+<!doctype html>
+<h1>LOJA LG<h1>
+<h2> Produto 1<h2>
+<img src="Celular_lg.jpg" alt="LG G8S THINQ" width="378" height="252">
+<p> <label> Escolha o numero de parcelas </label>
+<p> <select name="Parcelas" id="Parcelas">
+     <option value="2">2X DE 1510</option>
+     <option value="3">3X DE 1020</option>
+     <option value="4">4X DE 780</option>
+     <option value="5">5X DE 640</option>
+     <option value="6">6X DE 550</option>
+</select>
